@@ -1,0 +1,97 @@
+package footer 
+
+templ Footer() {
+	<footer class="w-full bg-black text-gray-300">
+  <section id="about" class="py-12 mt-20">
+    <div class="container mx-auto">
+      <div class="footer-top flex flex-col items-center">
+        <a href="/" class="text-white text-xl font-semibold">Aniverse</a>
+      </div>
+      @Group()
+    </div>
+    <!-- A-Z list Section w/ Alphabetical Navigation -->
+    @AZList()
+    <!-- Links Section -->
+    @Links()
+    <!-- Disclaimer Text -->
+    <p class="about-text mt-8 max-w-prose mx-auto text-center text-xs opacity-50">
+      Aniverse does not store any files on our server; we only share links to the media hosted on 3rd party services.
+    </p>
+    <!-- Copyright -->
+    <p class="copyright mt-4 text-center text-xs">
+      2024 © Aniverse. All Rights Reserved.
+    </p>
+  </section>
+</footer>
+}
+
+
+templ AZList() {
+	<nav class="footer-az mt-12">
+		<h3 class="block mb-3 text-lg">A-Z List</h3>
+		<p class="text-sm">Search anime by alphabet name A to Z.</p>
+		<ul class="flex flex-wrap gap-2 mt-2">
+			<li><a href="/anime" class="text-gray-400 hover:text-pink-500">All</a></li>
+			<li><a href="/az-list/A" class="text-gray-400 hover:text-pink-500">A</a></li>
+			<li><a href="/az-list/B" class="text-gray-400 hover:text-pink-500">B</a></li>
+			<li><a href="/az-list/C" class="text-gray-400 hover:text-pink-500">C</a></li>
+			<li><a href="/az-list/A" class="text-gray-400 hover:text-pink-500">E</a></li>
+			<li><a href="/az-list/B" class="text-gray-400 hover:text-pink-500">F</a></li>
+			<li><a href="/az-list/C" class="text-gray-400 hover:text-pink-500">G</a></li>
+			<li><a href="/az-list/A" class="text-gray-400 hover:text-pink-500">H</a></li>
+			<li><a href="/az-list/B" class="text-gray-400 hover:text-pink-500">I</a></li>
+			<li><a href="/az-list/C" class="text-gray-400 hover:text-pink-500">J</a></li>
+			<li><a href="/az-list/A" class="text-gray-400 hover:text-pink-500">K</a></li>
+			<li><a href="/az-list/B" class="text-gray-400 hover:text-pink-500">L</a></li>
+			<li><a href="/az-list/C" class="text-gray-400 hover:text-pink-500">M</a></li>
+			<li><a href="/az-list/A" class="text-gray-400 hover:text-pink-500">N</a></li>
+			<li><a href="/az-list/B" class="text-gray-400 hover:text-pink-500">O</a></li>
+			<li><a href="/az-list/C" class="text-gray-400 hover:text-pink-500">P</a></li>
+			<li><a href="/az-list/A" class="text-gray-400 hover:text-pink-500">Q</a></li>
+			<li><a href="/az-list/B" class="text-gray-400 hover:text-pink-500">R</a></li>
+			<li><a href="/az-list/C" class="text-gray-400 hover:text-pink-500">S</a></li>
+			<li><a href="/az-list/A" class="text-gray-400 hover:text-pink-500">T</a></li>
+			<li><a href="/az-list/B" class="text-gray-400 hover:text-pink-500">U</a></li>
+			<li><a href="/az-list/C" class="text-gray-400 hover:text-pink-500">V</a></li>
+			<li><a href="/az-list/A" class="text-gray-400 hover:text-pink-500">W</a></li>
+			<li><a href="/az-list/B" class="text-gray-400 hover:text-pink-500">X</a></li>
+			<li><a href="/az-list/C" class="text-gray-400 hover:text-pink-500">Y</a></li>
+			<li><a href="/az-list/C" class="text-gray-400 hover:text-pink-500">Z</a></li>
+		</ul>
+	</nav>
+}
+
+templ Links() {
+	<nav class="footer-links mt-8">
+		<ul class="flex justify-center mt-8">
+			<li><a href="/terms" class="text-gray-400 hover:text-pink-500">Terms of Service</a></li>
+			<li><a href="/dmca" class="text-gray-400 hover:text-pink-500">DMCA</a></li>
+		</ul>
+	</nav>
+}
+
+templ Group() {
+	<div class="footer join-group mt-8">
+		<div class="text-center">
+			<h2 class="text-lg font-semibold">
+				<span class="block">Join Now</span>
+			</h2>
+			<ul class="flex justify-center space-x-4 mt-4">
+				<li>
+					<a href="/donate" target="_blank" class="text-pink-500">
+						<i class="fas fa-donate">
+							<span class="sr-only">Donate</span>
+						</i>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank" class="text-pink-500">
+						<i class="fab fa-discord">
+							<span class="sr-only">Discord</span>
+						</i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+}

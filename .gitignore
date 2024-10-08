@@ -1,0 +1,117 @@
+# Compiled source
+*.class
+*.o
+*.so
+*.dll
+*.exe
+*.out
+*.dylib
+
+# Dependency directories
+node_modules/
+vendor/
+*.log
+
+# Build directories
+build/
+dist/
+bin/
+obj/
+target/
+
+# Editor & IDE directories and configuration files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs and database files
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+
+# Environment variables and configuration files
+.env
+.env.local
+.env.*.local
+
+# Go specific
+*.test
+*.exe
+*.out
+*.a
+*.mod
+*.sum
+
+# Go workspace
+go.work
+go.work.sum
+
+# Coverage results
+*.cover
+*.cov
+
+# Go vendor dependencies (if used)
+vendor/
+
+# Python specific
+*.pyc
+*.pyo
+__pycache__/
+
+# JavaScript specific
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Rust specific
+Cargo.lock
+target/
+
+# Java specific
+*.jar
+*.war
+*.ear
+
+# C specific
+*.dSYM/
+*.elf
+*.bin
+
+# Compiled libraries
+*.dylib
+*.jar
+*.class
+*.war
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Generated files
+*.iml
+*.ipr
+*.iws
+
+# Go binaries
+*.exe
+*.out
+*.a
+*.mod
+*.sum
+
+# Ignore generated templ files
+*_templ.go

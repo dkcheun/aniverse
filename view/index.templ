@@ -1,0 +1,37 @@
+package view
+
+import (
+	"aniverse/internal/types"
+	"aniverse/view/component/partials/footer"
+	"aniverse/view/component/partials/header"
+	"aniverse/view/component/video"
+	"strconv"
+)
+
+templ Watch(data *types.Episode) {
+	<!DOCTYPE html>
+	<html>
+		@header.Header()
+		<body class="flex flex-col min-h-screen">
+			<main class="container mx-auto p-4 flex-grow">
+				// VideoPlayer seciton
+				<section class="w-full mb-4">
+					<figure class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+						<article class="mb-4">
+							<h3 id="anime-title" class="text-3xl font-bold mb-2">{ strconv.Itoa(data.Number) }. { data.EpisodeTitle } </h3>
+						</article>
+						@video.Player(data.Source.Sources)
+						<figcaption class="text-center text-sm text-gray-400 mt-2">Streaming in HLS format</figcaption>
+					</figure>
+				</section>
+				<section id="episode-info" class="text-lg">
+					<p><strong>Episode:</strong> 13</p>
+					<p><strong>Filler:</strong> No</p>
+					<p><strong>Dub:</strong> Not Available</p>
+				</section>
+			</main>
+			{ children... }
+			@footer.Footer()
+		</body>
+	</html>
+}
